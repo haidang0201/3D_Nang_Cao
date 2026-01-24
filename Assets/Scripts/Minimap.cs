@@ -5,9 +5,11 @@ using UnityEngine;
 public class Minimap : MonoBehaviour
 {
     public Transform player;
-    private void Update() {
+    private void Update()
+    {
         Vector3 newPos = player.position;
-        newPos.y = tranform.position.y;
+        newPos.y = transform.position.y;
         transform.position = newPos;
     }
+
 }

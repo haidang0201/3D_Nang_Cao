@@ -7,8 +7,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-	[HideInInspector] public EnemySpawner Spawner;		//A Reference to the spawner that created this enemy
-
+	[HideInInspector] public EnemySpawner Spawner;		
 	[Header("Health Properties")]
 	[SerializeField] int maxHealth = 100;				//How much health this enemy has
 	[SerializeField] int scoreValue = 10; 				//How many points this enemy is worth

@@ -58,8 +58,9 @@ public class PlayerHealth : MonoBehaviour
 			damageImage.Flash();
 
 		//If there is a health slider, update its value
-		if(healthSlider != null)
+		if (healthSlider != null)
 			healthSlider.value = currentHealth / (float)maxHealth;
+			Debug.Log("Player Health: " + currentHealth + "/" + maxHealth);
 
 		//If the player has been defeated by this attack...
 		if (!IsAlive())

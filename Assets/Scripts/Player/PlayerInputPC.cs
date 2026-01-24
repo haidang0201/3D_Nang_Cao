@@ -6,8 +6,9 @@ using UnityEngine.EventSystems;
 public class PlayerInputPC : MonoBehaviour
 {
 	[SerializeField] PlayerMovement playerMovement = null;	
-	[SerializeField] PlayerAttack playerAttack = null;		
-	[SerializeField] PauseMenu pauseMenu;					
+	[SerializeField] PlayerAttack playerAttack = null;
+	[SerializeField] PauseMenu pauseMenu;
+	[SerializeField] GameObject canvas_inventory;					
 
 	
 	void Reset ()
@@ -29,6 +30,7 @@ public class PlayerInputPC : MonoBehaviour
 
 	void Update ()
 	{
+		
 		//If there is a pause menu and the player presses the Cancel input axis, pause the game
 		if (pauseMenu != null && Input.GetButtonDown("Cancel"))
 			pauseMenu.Pause();
@@ -39,6 +41,14 @@ public class PlayerInputPC : MonoBehaviour
 		HandleMoveInput();
 		HandleAttackInput();
 		HandleAllyInput();
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			canvas_inventory.gameObject.SetActive(false);
+		}
+		else if (Input.GetKeyDown(KeyCode.I))
+		{
+			canvas_inventory.gameObject.SetActive(true);
+		}
 	}
 
 	bool CanUpdate()
