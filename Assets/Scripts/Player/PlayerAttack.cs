@@ -1,8 +1,4 @@
-﻿//This script handles the player's ability to attack. The biggest responcibility of this script is to maintain the timing of attack cooldowns
-//so that the player cannot attack too fast. Mostly, this is a "pass through" or "bridge" script, which means that it receives input from
-//the PlayerInput scripts and then passes the input along to the appropriate attack. Very little attack logic (apart from timing) exists in this 
-//script. 
-
+﻿
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -20,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
 	int attackIndex = 0;								//The idnex of the attack the player is currently using
 	float attackCooldown = 0f;							//How long the player must wait before attacking again
 	float timeOfLastAttack = 0f;						//The time when the player last attacked
-	bool canAttack = true;								//Whether or not the player can attack
+	bool canAttack = true;								
 
 	//This method switches the active attack on the player
 	public void SwitchAttack()
