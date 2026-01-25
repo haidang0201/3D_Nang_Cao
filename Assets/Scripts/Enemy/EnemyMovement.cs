@@ -47,62 +47,60 @@ public class EnemyMovement : MonoBehaviour
 	//This coroutine updates the navmesh agent to chase the player
 	IEnumerator ChasePlayer ()
 	{
-		//Start by waiting a single frame to give the game a chance to initialize.
-		//This is usefull if you start with an enemy in the scene (instead of spawning it)
+		
 		yield return null;
 
-		//If there is no GameManager, leave this coroutine permanently (that's 
-		//what 'yield break' does
+		
 		if (GameManager.Instance == null)
 			yield break;
 
-		//While the navmesh agent is enabled...
+		
 		while (navMeshAgent.enabled)
 		{
-			//...get the target from the GameManager...
+			
 			Transform target = GameManager.Instance.EnemyTarget;
-			//...and if the enemy is running away, head towards the run away position...
+			
 			if (isRunningAway)
 				navMeshAgent.SetDestination(runAwayPosition);
-			//...otherwise, if the target exists, head towards it...
+			
 			else if (target != null)
 				navMeshAgent.SetDestination(target.position);
-			//...finally, wait a time interval before looping
+			
 			yield return updateDelay;
 		}
 	}
 
-	//Called when the enemy is defeated and can no longer move
+
 	public void Defeated()
 	{
-		//Disable the navmesh agent
+		
 		navMeshAgent.enabled = false;
-		//If there is a frost debuff attached, remove it
+		
 		if (FrostDebuff != null)
 			FrostDebuff.gameObject.SetActive (false);
 	}
 
-	//This method is called by a frost debuff when it get's frozen in place
+	
 	public void Freeze()
 	{
-		//Stop animating
+		
 		animator.enabled = false;
-		//Record the navmesh agent's speed (will be needed later)
+		
 		originalSpeed = navMeshAgent.speed;
-		//Stop the navmesh agent
+		
 		navMeshAgent.speed = 	0f;
 	}
 
-	//This method is called by a frost debuff when it wears off
+	
 	public void UnFreeze()
 	{
-		//Start animating again
+		
 		animator.enabled = true;
-		//Set the speed back to it's original value
+		
 		navMeshAgent.speed = originalSpeed;
 	}
 
-	//This method is called when the enemy is hit by a stink attack
+	
 	public void Runaway()
 	{
 		//The enemy is now running away
