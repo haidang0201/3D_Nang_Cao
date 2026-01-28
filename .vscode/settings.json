@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "3D_Nang_Cao.slnx"
+    "dotnet.defaultSolution": "3D_Demo.sln"
 }
