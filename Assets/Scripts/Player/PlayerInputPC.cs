@@ -31,9 +31,19 @@ public class PlayerInputPC : MonoBehaviour
 	void Update ()
 	{
 		
+<<<<<<< HEAD
 		if (pauseMenu != null && Input.GetButtonDown("Cancel"))
 			pauseMenu.Pause();
 		
+=======
+		//If there is a pause menu and the player presses the Cancel input axis, pause the game
+		if (pauseMenu != null && Input.GetKeyDown(KeyCode.Space)){
+			Debug.Log("Pause Menu Activated from Player Input");
+			pauseMenu.Pause();
+
+		}
+		//If the player cannot update, leave
+>>>>>>> 5de0292ac61eed0cbea2c38f3ac90e1c78253992
 		if (!CanUpdate())
 			return;
 		
