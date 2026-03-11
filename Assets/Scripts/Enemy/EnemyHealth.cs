@@ -1,7 +1,4 @@
-﻿//This script controls the health functions of the enemies. This script also is responsible for turning
-//the enemy movement and attack off in the event of the enemy being defeated. Since the enemies aren't destroyed after
-//being defeated (they are just disabled since the game maintains 'pools' or collections of enemies) there is
-//code in place to reset the values of the enemies when they respawn
+﻿
 
 using UnityEngine;
 
@@ -9,30 +6,29 @@ public class EnemyHealth : MonoBehaviour
 {
 	[HideInInspector] public EnemySpawner Spawner;		
 	[Header("Health Properties")]
-	[SerializeField] int maxHealth = 100;				//How much health this enemy has
-	[SerializeField] int scoreValue = 10; 				//How many points this enemy is worth
+	[SerializeField] int maxHealth = 100;				
+	[SerializeField] int scoreValue = 10; 				
 
 	[Header("Defeated Effects")]
-	[SerializeField] float sinkSpeed = 2.5f;			//How fast the enemy sinks into the ground		
-	[SerializeField] float deathEffectTime = 2f;		//How long it takes the enemy to play its full death sequence before being deactivated
-	[SerializeField] AudioClip deathClip = null;		//Audio clip of the death sound of the enemy
-	[SerializeField] AudioClip hurtClip = null;			//Audio clip of the hurt sound of the enemy
+	[SerializeField] float sinkSpeed = 2.5f;				
+	[SerializeField] float deathEffectTime = 2f;		
+	[SerializeField] AudioClip deathClip = null;		
+	[SerializeField] AudioClip hurtClip = null;			
 
 	[Header("Script References")]
-	[SerializeField] EnemyAttack enemyAttack;			//Reference to the enemy's attack script
-	[SerializeField] EnemyMovement enemyMovement;		//Reference to the enemy's movement script
+	[SerializeField] EnemyAttack enemyAttack;			
+	[SerializeField] EnemyMovement enemyMovement;		
 
 	[Header("Components")]
-	[SerializeField] Animator animator;					//Reference to the animator component
-	[SerializeField] AudioSource audioSource;			//Reference to the audio source component
-	[SerializeField] CapsuleCollider capsuleCollider;	//Reference to the capsule collider component
-	[SerializeField] ParticleSystem hitParticles;		//Reference to the particle system on the hit particles game object
+	[SerializeField] Animator animator;					
+	[SerializeField] AudioSource audioSource;			
+	[SerializeField] CapsuleCollider capsuleCollider;	
+	[SerializeField] ParticleSystem hitParticles;		
 
 	[Header("Debugging Properties")]
-	[SerializeField] bool isInvulnerable;				//Is the enemy immune to all damage?
-
-	int currentHealth;									//Current health amount of enemy
-	bool isSinking;										//Is the enemy currently sinking?
+	[SerializeField] bool isInvulnerable;				
+	int currentHealth;									
+	bool isSinking;										
 
 	//Reset() defines the default values for properties in the inspector
 	void Reset ()

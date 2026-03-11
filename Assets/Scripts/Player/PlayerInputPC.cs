@@ -31,14 +31,12 @@ public class PlayerInputPC : MonoBehaviour
 	void Update ()
 	{
 		
-		//If there is a pause menu and the player presses the Cancel input axis, pause the game
 		if (pauseMenu != null && Input.GetButtonDown("Cancel"))
 			pauseMenu.Pause();
-		//If the player cannot update, leave
+		
 		if (!CanUpdate())
 			return;
-		//Handle inputs for movement, attacking, and allies
-		HandleMoveInput();
+		
 		HandleAttackInput();
 		HandleAllyInput();
 		if (Input.GetKeyDown(KeyCode.U))
@@ -71,6 +69,7 @@ public class PlayerInputPC : MonoBehaviour
 		//Get the raw Horizontal and Vertical inputs (raw inputs have no smoothing applied)
 		float horizontal = Input.GetAxisRaw("Horizontal");
 		float vertical = Input.GetAxisRaw("Vertical");
+		Debug.Log("Horizontal: " + horizontal + " Vertical: " + vertical);
 		
 		playerMovement.MoveDirection = new Vector3(horizontal, 0, vertical);
 		
