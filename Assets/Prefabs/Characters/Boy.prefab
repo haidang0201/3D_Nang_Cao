@@ -10031,13 +10031,13 @@ GameObject:
   m_Component:
   - component: {fileID: 484106}
   - component: {fileID: 9507390}
-  - component: {fileID: 5440604}
   - component: {fileID: 13627152}
   - component: {fileID: 11407884}
   - component: {fileID: 11436662}
   - component: {fileID: 11418946}
   - component: {fileID: 11487690}
   - component: {fileID: 8242252}
+  - component: {fileID: 7053586516335673340}
   m_Layer: 0
   m_Name: Boy
   m_TagString: Untagged
@@ -10085,33 +10085,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &5440604
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108696}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: Infinity
-  m_AngularDrag: Infinity
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!136 &13627152
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10150,7 +10123,8 @@ MonoBehaviour:
   playerMovement: {fileID: 11487690}
   playerAttack: {fileID: 11418946}
   pauseMenu: {fileID: 0}
-  canvas_inventory: {fileID: 0}
+  canvas_inventory: {fileID: 5479580370099075963, guid: add2f59a3f02c404b83a3315948767f6,
+    type: 3}
 --- !u!114 &11436662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10206,7 +10180,7 @@ MonoBehaviour:
   LookDirection: {x: 0, y: 0, z: 1}
   speed: 6
   animator: {fileID: 9507390}
-  rigidBody: {fileID: 5440604}
+  rigidBody: {fileID: 7053586516335673340}
 --- !u!82 &8242252
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10304,6 +10278,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!54 &7053586516335673340
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108696}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &109106
 GameObject:
   m_ObjectHideFlags: 0
