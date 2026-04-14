@@ -61,7 +61,7 @@ public class PlayerSelect : MonoBehaviour
 	void DeathComplete ()
 	{
 		//Remove any drag on the rigidbody so this player can sink into the ground
-		rigidBody.drag = 0f;
+		rigidBody.linearDamping = 0f;
 		//Destroy this game object after 1 second
 		Destroy (gameObject, 1f);
 	}
