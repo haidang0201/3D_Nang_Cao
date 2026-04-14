@@ -109,7 +109,7 @@ public class EnemyHealth : MonoBehaviour
 		enemyMovement.Defeated();
 
 		//Tell the game manager to give the player some points
-		GameManager.Instance.AddScore(scoreValue);
+		GameManager.Instance.AddScore(1	);
 		//Call the TurnOff() method after a period of time
 		Invoke("TurnOff", deathEffectTime);
 	}

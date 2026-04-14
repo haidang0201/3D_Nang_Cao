@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2026-04-10_21-59-28" tag="">
+  <assembly name="Assembly-CSharp">
+    <class name="Ally" coveredlines="0" coverablelines="6" totallines="22" coveredbranches="0" totalbranches="0" />
+    <class name="AllyManager" coveredlines="7" coverablelines="31" totallines="85" coveredbranches="0" totalbranches="0" />
+    <class name="AnimatorDisabler" coveredlines="0" coverablelines="6" totallines="25" coveredbranches="0" totalbranches="0" />
+    <class name="AVPlayer" coveredlines="6" coverablelines="10" totallines="29" coveredbranches="0" totalbranches="0" />
+    <class name="CameraFollow" coveredlines="6" coverablelines="6" totallines="22" coveredbranches="0" totalbranches="0" />
+    <class name="CharacterSpotlight" coveredlines="0" coverablelines="9" totallines="37" coveredbranches="0" totalbranches="0" />
+    <class name="Countdown" coveredlines="0" coverablelines="22" totallines="55" coveredbranches="0" totalbranches="0" />
+    <class name="EnemyAttack" coveredlines="45" coverablelines="50" totallines="126" coveredbranches="0" totalbranches="0" />
+    <class name="EnemyHealth" coveredlines="25" coverablelines="53" totallines="135" coveredbranches="0" totalbranches="0" />
+    <class name="EnemyMovement" coveredlines="35" coverablelines="47" totallines="121" coveredbranches="0" totalbranches="0" />
+    <class name="EnemySpawner" coveredlines="32" coverablelines="33" totallines="90" coveredbranches="0" totalbranches="0" />
+    <class name="FlashFade" coveredlines="0" coverablelines="18" totallines="45" coveredbranches="0" totalbranches="0" />
+    <class name="FrostAttack" coveredlines="59" coverablelines="63" totallines="140" coveredbranches="0" totalbranches="0" />
+    <class name="FrostDebuff" coveredlines="62" coverablelines="63" totallines="134" coveredbranches="0" totalbranches="0" />
+    <class name="GameManager" coveredlines="17" coverablelines="83" totallines="136" coveredbranches="0" totalbranches="0" />
+    <class name="InventoryManager" coveredlines="9" coverablelines="47" totallines="70" coveredbranches="0" totalbranches="0" />
+    <class name="Item" coveredlines="0" coverablelines="2" totallines="17" coveredbranches="0" totalbranches="0" />
+    <class name="ItempicKup" coveredlines="0" coverablelines="7" totallines="22" coveredbranches="0" totalbranches="0" />
+    <class name="ItemUIController" coveredlines="0" coverablelines="7" totallines="19" coveredbranches="0" totalbranches="0" />
+    <class name="LightningAttack" coveredlines="21" coverablelines="21" totallines="55" coveredbranches="0" totalbranches="0" />
+    <class name="LightningBolt" coveredlines="33" coverablelines="33" totallines="81" coveredbranches="0" totalbranches="0" />
+    <class name="LookAtMouse" coveredlines="0" coverablelines="6" totallines="19" coveredbranches="0" totalbranches="0" />
+    <class name="MainMenu" coveredlines="0" coverablelines="16" totallines="31" coveredbranches="0" totalbranches="0" />
+    <class name="Minimap" coveredlines="5" coverablelines="5" totallines="15" coveredbranches="0" totalbranches="0" />
+    <class name="MobileInterface" coveredlines="0" coverablelines="7" totallines="22" coveredbranches="0" totalbranches="0" />
+    <class name="MouseLocation" coveredlines="14" coverablelines="26" totallines="93" coveredbranches="0" totalbranches="0" />
+    <class name="NPCTalkSimple" coveredlines="9" coverablelines="36" totallines="65" coveredbranches="0" totalbranches="0" />
+    <class name="PauseManager" coveredlines="0" coverablelines="30" totallines="51" coveredbranches="0" totalbranches="0" />
+    <class name="PauseMenu" coveredlines="0" coverablelines="44" totallines="112" coveredbranches="0" totalbranches="0" />
+    <class name="PlayAgainButton" coveredlines="0" coverablelines="5" totallines="13" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerAttack" coveredlines="81" coverablelines="97" totallines="215" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerHealth" coveredlines="34" coverablelines="88" totallines="138" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerInputPC" coveredlines="50" coverablelines="62" totallines="116" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerInputTouch" coveredlines="0" coverablelines="54" totallines="108" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerMovement" coveredlines="16" coverablelines="20" totallines="55" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerSelect" coveredlines="0" coverablelines="22" totallines="68" coveredbranches="0" totalbranches="0" />
+    <class name="QuitButton" coveredlines="0" coverablelines="4" totallines="11" coveredbranches="0" totalbranches="0" />
+    <class name="RetryButton" coveredlines="0" coverablelines="5" totallines="13" coveredbranches="0" totalbranches="0" />
+    <class name="SimpleDialogue" coveredlines="3" coverablelines="21" totallines="47" coveredbranches="0" totalbranches="0" />
+    <class name="SlimeAttack" coveredlines="23" coverablelines="38" totallines="96" coveredbranches="0" totalbranches="0" />
+    <class name="SlimeDebuff" coveredlines="3" coverablelines="29" totallines="70" coveredbranches="0" totalbranches="0" />
+    <class name="SlimeProjectile" coveredlines="2" coverablelines="31" totallines="72" coveredbranches="0" totalbranches="0" />
+    <class name="StinkAttack" coveredlines="34" coverablelines="34" totallines="81" coveredbranches="0" totalbranches="0" />
+    <class name="StinkHit" coveredlines="21" coverablelines="21" totallines="51" coveredbranches="0" totalbranches="0" />
+    <class name="StinkProjectile" coveredlines="35" coverablelines="38" totallines="95" coveredbranches="0" totalbranches="0" />
+    <class name="Touchpad" coveredlines="0" coverablelines="64" totallines="144" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="PlayModeTests">
+    <class name="PlayerAttack" coveredlines="4" coverablelines="124" totallines="275" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerAttackPlayModeTests" coveredlines="23" coverablelines="116" totallines="250" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerPlayModeTest" coveredlines="0" coverablelines="14" totallines="250" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerPlayModeTest2" coveredlines="0" coverablelines="22" totallines="0" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Tests">
+    <class name="NewTestScript" coveredlines="0" coverablelines="5" totallines="24" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerEditModeTest" coveredlines="0" coverablelines="26" totallines="107" coveredbranches="0" totalbranches="0" />
+    <class name="PlayerEditModeTest2" coveredlines="0" coverablelines="8" totallines="36" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>
